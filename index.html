@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Portfolio</title>
+    <link rel="website icon" type="png" href="./title.png" />
+
+    <!-- REMIX ICON  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- BOXICONS LINK  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS FILE LINK   -->
+    <link rel="stylesheet" href="./3DPortFolio.css" />
+
+    <!-- mesaage link -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("2gooZeOejsLBB9smT"); // Use a secure method in production
+      })();
+    </script>
+  </head>
+  <body>
+    <!----------------------------------- NAVBAR  ------------------------>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="active">
+          <i class="bx bx-home-alt"> </i><span class="tooltip">Home</span>
+        </li>
+        <li><i class="bx bx-user"> </i> <span class="tooltip">About</span></li>
+        <li>
+          <i class="ri-lightbulb-flash-line"></i>
+          <span class="tooltip">Skills</span>
+        </li>
+        <li>
+          <i class="bx bx-briefcase"></i> <span class="tooltip">Website</span>
+        </li>
+        <li>
+          <i class="bx bx-envelope"></i> <span class="tooltip">Contact</span>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="box">
+        <!--------------------- HOME SECTION ------------------------->
+        <section class="section home active">
+          <div class="home-info">
+            <h3>Hello I'm</h3>
+            <h1>Afsal Ahamed</h1>
+            <h3>"Front-end" developer</h3>
+            <p class="desc">
+              I have hands-on frameworks like React.js and Bootstrap, paired
+              with modern frontend technologies like Tailwind . My work involves
+              not only coding but also problem-solving, collaborating in agile
+              teams, and driving projects to successful completion.
+            </p>
+            <!-- <div class="btn-sci btn-4" data-tooltip="Size: 20Mb"> -->
+            <div class="btn-sci">
+              <a href="./Resume.pdf" download class="btn"
+                >Dowmload CV
+                <i
+                  style="position: relative; margin-left: 4px; top: 3px"
+                  class="fa-solid fa-download"
+                ></i>
+              </a>
+              <script>
+                let button = document.querySelector("btn a");
+                button.addEventListener("click", () => {
+                  const i = document.querySelector(" a i");
+                  button.style.paddingRight = "10px";
+                  i.style.visibility ="visibility";
+                  setTimeout(()=>{
+                    i.style.transition ='1s ease-in-out';
+                    button.style.paddingRight='0px'
+                  })
+                });
+              </script>
+              <div class="sci">
+                <a href="https://github.com/afsal12hash">
+                  <i class="bx bxl-github"></i>
+                  <span class="tooltip">Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/afsal-ahamed-s-0b5775293/">
+                  <i class="bx bxl-linkedin"></i>
+                  <span class="tooltip">Linkedin</span>
+                </a>
+                <a href="https://wa.me/917708689622">
+                  <i class="ri-whatsapp-line"></i>
+                  <span class="tooltip">Whatsapp</span>
+                </a>
+                <a href="https://mailto:afsalahamed2025@gmail.com">
+                  <i class="ri-mail-line"></i>
+                  <span class="tooltip">Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-wrapper">
+            <div class="img-box home-img">
+              <img src="./Afsal-.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!---------------------- ABOUT SECTION  --------------------------->
+        <section class="section about">
+          <div class="img-wrapper">
+            <div class="img-box about-img">
+              <img src="./Afsal-.png" alt="" />
+            </div>
+          </div>
+          <div class="about-info">
+            <h2 class="title">About Me</h2>
+            <h3>Front-end Developer!</h3>
+            <p class="desc">
+              I am a passionate and detail-oriented front-end developer with a
+              strong foundation in creating responsive and visually engaging
+              user interfaces. With expertise in HTML, CSS, JavaScript, and
+              modern frameworks like React [or specify your preferred tools], I
+              bring designs to life while ensuring seamless user experiences. I
+              have a keen eye for design, a commitment to clean and maintainable
+              code, and a drive to stay updated with the latest trends and
+              technologies in web development.
+            </p>
+            <a href="https://wa.me/917708689622" class="btn"> Hire Me</a>
+          </div>
+        </section>
+        <!----------------------- RESUME (SKILL,EDUCATION) SECTION --------------------------->
+        <section class="section resume">
+          <h2 class="title">Skills</h2>
+          <div class="tab-box">
+            <div class="tab-list resume-list active">
+              <h3>Skill</h3>
+            </div>
+            <div class="tab-list resume-list">
+              <h3>Education</h3>
+            </div>
+          </div>
+          <div class="tab-warpper">
+            <div class="tab-grid resume-box skills active">
+              <div class="tab-item resume-item">
+                <i class="bx bxl-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="bx bxl-css3"></i>
+                <p>Css3</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="bx bxl-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="bx bxl-tailwind-css"></i>
+                <p>Tailwind.css</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="bx bxl-javascript"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="bx bxl-react"></i>
+                <p>React.js</p>
+              </div>
+            </div>
+
+            <div class="tab-grid resume-box education">
+              <div class="tab-item resume-item">
+                <h4>2024</h4>
+                <h4>FullStack Developer</h4>
+                <h4>Offline Course</h4>
+                <p>Idm TechPark Ram-Nagar Kandhipuram-641005 Coimbatore</p>
+              </div>
+              <div class="tab-item edu resume-item">
+                <h4>2021-2024</h4>
+                <h4>Bechelor Of Computer Science</h4>
+                <h4>Bharathiyar Universcity</h4>
+                <p>Bishop Ambrose College Sungam-641008 Coimbatore</p>
+              </div>
+              <div class="tab-item edu resume-item">
+                <h4>2020</h4>
+                <h4>Coding Details Skypark Itech</h4>
+                <h4>Online Course</h4>
+                <p>Self Learing Of Online Course</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WEBSITE (WORKOUT) SECTION  -->
+        <section class="section project">
+          <h2 class="title">Project</h2>
+          <div class="tab-box">
+            <div class="tab-list project-list active">
+              <h3>My Work</h3>
+            </div>
+            <div class="tab-list project-list">
+              <h3>My Service</h3>
+            </div>
+          </div>
+          <div class="tab-wrapper">
+            <div class="tab-grid project-box work active">
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./WORK-1.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    The "Fanta" Project in could be described as a modern,
+                    dynamic web application built using React.js creating
+                    responsive user interfaces.
+                  </p>
+                  <div class="tech-used">
+                    <p>React.js, Tailwindcss</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./WORK-2.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A GSAP, React.js, and Tailwind CSS project combines the
+                    power of modern web animation, responsive design to create
+                    visually stunning and interactive web experiences.
+                  </p>
+                  <div class="tech-used">
+                    <p>React.js, Tailwindcss, Gsap</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./WORK-3.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A portfolio built with React.js and CSS showcases your work
+                    dynamically with a responsive and visually appealing design.
+                  </p>
+                  <div class="tech-used">
+                    <p>React.js, Css</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./work-4.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A taxi website built with HTML, CSS, and JavaScript offers a
+                    user-friendly platform for booking rides with an intuitive
+                    interface and responsive design.
+                  </p>
+                  <div class="tech-used">
+                    <p>HTML5, CSS3, Javascript</p>
+                  </div>
+                  <div class="project-icon work-icon active">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./work-5.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A 3D car movement website built with HTML, CSS, and
+                    JavaScript provides an interactive experience with dynamic
+                    and visually engaging animations.
+                  </p>
+                  <div class="tech-used">
+                    <p>HTML5, CSS3, Javasript</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./work-6.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A coffee shop website built with HTML, CSS, and JavaScript
+                    offers a user-friendly experience to explore the menu,
+                    location, and online orders with a stylish design.
+                  </p>
+                  <div class="tech-used">
+                    <p>HTML5, CSS3, Javasript</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./work-7.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    A Common Service Center website built with HTML, CSS, and
+                    JavaScript provides a seamless platform for accessing
+                    various government services with a user-friendly and
+                    responsive design.
+                  </p>
+                  <div class="tech-used">
+                    <p>HTML5, CSS3, Javasript</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item project-item">
+                <div class="work-img">
+                  <img src="./work-8.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Front-end Project</h4>
+                  <p>
+                    Designing a website with HTML and CSS creates a structured,
+                    visually engaging, and user-friendly online presence
+                  </p>
+                  <div class="tech-used">
+                    <p>HTML5, CSS3</p>
+                  </div>
+                  <div class="project-icon work-icon">
+                    <a href="#">
+                      <i class="bx bx-up-arrow-alt"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/afsal12hash">
+                      <i class="bx bxl-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-grid project-box service">
+              <div class="tab-item project-item">
+                <div class="project-icon service-icon">
+                  <i class="bx bx-code-alt icon"></i>
+                  <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h4>Web Development</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                quas suscipit obcaecati.
+              </div>
+              <div class="tab-item colon project-item">
+                <div class="project-icon service-icon">
+                  <i class="bx bx-slideshow icon"></i>
+                  <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h4>Video Editing</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  quia doloremqu
+                </p>
+              </div>
+              <div class="tab-item colon project-item">
+                <div class="project-icon service-icon">
+                  <i class="bx bx-camera icon"></i>
+                  <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h4>Photography</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  quia doloremqu
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION  -->
+
+        <section class="section contact active">
+          <h2 class="title">Contact</h2>
+          <div class="contact-wrapper">
+            <form action="" class="contact-form" id="contactForm">
+              <h3>Let's Work Together</h3>
+              <div class="field-box">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  id="name"
+                  class="item"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  id="email"
+                  class="item"
+                  autocomplete="off"
+                  required
+                />
+                <!-- <input type="text" placeholder="Phone Number" required />
+                <input type="text" placeholder="Email Subject" required /> -->
+                <textarea
+                  placeholder="Your Message"
+                  id="message"
+                  class="item"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </div>
+              <div class="contact-btn">
+                <button type="submit" aria-label="Send message" class="btn">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILE SCRIPT  -->
+
+    <script src="./3DPortFolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
