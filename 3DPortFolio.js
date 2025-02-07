@@ -93,7 +93,7 @@ if (!emailRegex.test(email)) {
 
     // Sending the email
     emailjs
-      .send("service_ujk4fno", "template_ttblsgi", templateParams)
+      .send("service_ujk4fno", "template_n81bjim", templateParams)
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
