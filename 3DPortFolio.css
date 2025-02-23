@@ -123,7 +123,7 @@ a:hover .tooltip,
   transform: rotateY(0deg);
 
   transition: 2s;
-  animation: animate-cube 6s ease-in-out backwards;
+  animation: animate-cube 5s ease-in-out backwards;
 }
 
 @keyframes animate-cube {
@@ -247,7 +247,6 @@ a:hover .tooltip,
 }
 .img-box.home-img:hover {
   box-shadow: none;
- 
 }
 .img-box img {
   position: absolute;
@@ -688,7 +687,7 @@ a:hover .tooltip,
     transform: scale(1);
     transition: 0.5s;
   }
-  .project-item .work-img  {
+  .project-item .work-img {
     height: 150%;
   }
   .tab-grid {
